@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unnati Devidas Ambatkar - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00c896',
+                        secondary: '#007a75',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #00c896 0%, #007a75 100%);
+        }
+        .skill-bar {
+            height: 8px;
+            border-radius: 4px;
+            background-color: #e9ecef;
+        }
+        .skill-progress {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #00c896 0%, #007a75 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-primary">Unnati Ambatkar</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-800 hover:text-primary transition duration-300">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-primary transition duration-300">About</a>
+                <a href="#skills" class="text-gray-800 hover:text-primary transition duration-300">Skills</a>
+                <a href="#services" class="text-gray-800 hover:text-primary transition duration-300">Services</a>
+                <a href="#projects" class="text-gray-800 hover:text-primary transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-800 hover:text-primary transition duration-300">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-gray-800 text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-5xl font-bold text-gray-800 mb-4">UNNATI AMBATKAR</h1>
+                <h2 class="text-2xl font-semibold text-primary mb-6">MERN Stack Developer | Python & SQL Enthusiast</h2>
+                <p class="text-gray-600 mb-8 max-w-lg">
+                    Passionate B.Tech Computer Engineering graduate with expertise in full-stack development, Android apps, and exploring new technologies.
+                </p>
+                <div class="flex space-x-4 mb-8">
+                    <a href="#projects" class="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-secondary transition duration-300">View My Work</a>
+                    <a href="#contact" class="border border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition duration-300">Contact Me</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/UnnatiAmbatkar" class="text-gray-600 hover:text-primary transition duration-300">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/unnati-ambatkar-268b2026b" class="text-gray-600 hover:text-primary transition duration-300">
+                        <i class="fab fa-linkedin-in text-2xl"></i>
+                    </a>
+                    <a href="unnatiambatkar2021@gmail.com" class="text-gray-600 hover:text-primary transition duration-300">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <img src="https://i.postimg.cc/1zgQY905/unnati.jpg" alt="Unnati Ambatkar" class="rounded-full w-96 h-96 object-cover shadow-lg">
+                    <div class="absolute bottom-0 right-0 bg-primary text-white p-3 rounded-tl-xl rounded-br-xl">
+                        <span class="text-sm font-semibold">2025 Graduate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Passionate B.Tech Computer Engineering graduate from Nagpur University, specializing in full-stack web development and mobile applications. Ready to turn ideas into innovative digital solutions.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-primary mb-6 flex items-center">
+                        <i class="fas fa-graduation-cap mr-3"></i> Education
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="relative pl-8 border-l-2 border-primary">
+                            <div class="absolute left-0 top-0 -translate-x-2 mt-1">
+                                <div class="w-4 h-4 bg-primary rounded-full"></div>
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800">B.Tech in Computer Engineering</h4>
+                            <p class="text-primary font-medium">Nagpur University</p>
+                            <p class="text-gray-600">2021 - 2025</p>
+                            <p class="mt-2 text-gray-700">Focused on software engineering, algorithms, and emerging technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-primary mb-6 flex items-center">
+                        <i class="fas fa-briefcase mr-3"></i> Work Experience
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="relative pl-8 border-l-2 border-primary">
+                            <div class="absolute left-0 top-0 -translate-x-2 mt-1">
+                                <div class="w-4 h-4 bg-primary rounded-full"></div>
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800">Full-Stack Developer</h4>
+                            <p class="text-primary font-medium">Seed Infotech</p>
+                            <p class="text-gray-600">Jan 2024 - Jul 2024 (6 months)</p>
+                            <ul class="mt-2 text-gray-700 list-disc list-inside space-y-1">
+                                <li>Developed a full-stack MERN application with React.js and Redux</li>
+                                <li>Designed and implemented scalable backend using Node.js and Express.js</li>
+                                <li>Managed MongoDB database and optimized query performance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="relative pl-8 border-l-2 border-primary">
+                            <div class="absolute left-0 top-0 -translate-x-2 mt-1">
+                                <div class="w-4 h-4 bg-primary rounded-full"></div>
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800">Web Developer</h4>
+                            <p class="text-primary font-medium">Teachnook</p>
+                            <p class="text-gray-600">Mar 2024 - May 2024 (2 months)</p>
+                            <ul class="mt-2 text-gray-700 list-disc list-inside space-y-1">
+                                <li>Created responsive UI designs with HTML5, CSS3, and JavaScript</li>
+                                <li>Improved website performance by 40% through optimization techniques</li>
+                                <li>Enhanced accessibility compliance for better user experience</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="relative pl-8 border-l-2 border-primary">
+                            <div class="absolute left-0 top-0 -translate-x-2 mt-1">
+                                <div class="w-4 h-4 bg-primary rounded-full"></div>
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800">Android Developer</h4>
+                            <p class="text-primary font-medium">iBase</p>
+                            <p class="text-gray-600">Feb 2024 - Mar 2024 (1 month)</p>
+                            <ul class="mt-2 text-gray-700 list-disc list-inside space-y-1">
+                                <li>Built app features using Java and Android Studio</li>
+                                <li>Integrated REST APIs for data communication</li>
+                                <li>Conducted testing and debugging to ensure app stability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Continuously expanding my technical toolkit with hands-on projects and learning new technologies.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Languages</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>C</span>
+                                <span className="text-primary">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>C++</span>
+                                <span className="text-primary">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>HTML/CSS</span>
+                                <span className="text-primary">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>JavaScript</span>
+                                <span className="text-primary">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Python</span>
+                                <span className="text-primary">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Frontend</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>React.js</span>
+                                <span className="text-primary">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Node.js</span>
+                                <span className="text-primary">86%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 86%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Express.js</span>
+                                <span className="text-primary">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Bootstrap</span>
+                                <span className="text-primary">94%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 mt-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Databases</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>MongoDB</span>
+                                <span className="text-primary">84%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 84%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>MySQL</span>
+                                <span className="text-primary">79%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 79%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>SQLite</span>
+                                <span className="text-primary">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Developer Tools</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Git/GitHub</span>
+                                <span className="text-primary">91%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>VS Code</span>
+                                <span className="text-primary">93%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Android Studio</span>
+                                <span className="text-primary">87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>SQL Developer</span>
+                                <span className="text-primary">83%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 83%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Sublime Text</span>
+                                <span className="text-primary">81%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 81%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Services Offered</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Providing comprehensive development solutions tailored to meet your business needs.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Web Design & Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        Creating responsive, user-friendly websites using modern technologies and best practices.
+                    </p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Responsive Design</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Modern Frameworks</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>User-Centric Approach</li>
+                    </ul>
+                    <a href="#" class="text-primary font-semibold hover:text-secondary transition duration-300">Learn More →</a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Full-Stack Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        Building end-to-end applications with robust backend systems and engaging frontend interfaces.
+                    </p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>MERN Stack Expertise</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>API Development</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Database Optimization</li>
+                    </ul>
+                    <a href="#" class="text-primary font-semibold hover:text-secondary transition duration-300">Learn More →</a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Mobile App Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        Developing native and cross-platform mobile applications for iOS and Android platforms.
+                    </p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Android Development</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>kotlin</li>
+                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>App Store Deployment</li>
+                    </ul>
+                    <a href="#" class="text-primary font-semibold hover:text-secondary transition duration-300">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Showcasing my most impactful projects that demonstrate technical proficiency and creative problem-solving.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
+                    <img src="https://i.postimg.cc/g0GT1XSm/leaves.jpg" alt="Plant Identification App" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Edible Plant Identification</h3>
+                        <p class="text-gray-600 mb-4">ML-powered mobile application for plant classification with computer vision technology.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">TensorFlow</span>
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">Python</span>
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">OpenCV</span>
+                        </div>
+                        <a href="https://github.com/UnnatiAmbatkar" class="text-primary font-semibold hover:text-secondary transition duration-300">View Project →</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
+                    <img src="https://i.postimg.cc/vH6DkDk1/crypto.jpg" alt="Cryptocurrency Converter" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cryptocurrency Converter</h3>
+                        <p class="text-gray-600 mb-4">Real-time currency conversion app with price tracking and notification alerts for cryptocurrency markets.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">React Native</span>
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">CoinGecko API</span>
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">Push Notifications</span>
+                        </div>
+                        <a href="https://github.com/UnnatiAmbatkar/Cryptocurrency" class="text-primary font-semibold hover:text-secondary transition duration-300">View Project →</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
+                    <img src="https://i.postimg.cc/KzkRbzjs/food.jpg" alt="Hotel Management System" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Hotel Management System</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive online booking platform with integrated payment processing and inventory management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">JavaScript</span>
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">Bootstrap</span>
+                           <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">Stripe API</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:text-secondary transition duration-300">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
+                    <img src="https://i.postimg.cc/W3Gc0LH1/place.jpg" alt="Historical places of india website" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Historical places of india website</h3>
+                        <p class="text-gray-600 mb-4">From ancient caves to royal palaces, India’s historical sites capture the essence of its diverse heritage. Explore monuments that shaped the nation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">HTML</span>
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">CSS</span>
+                           <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/UnnatiAmbatkar/historical-places-in-india" class="text-primary font-semibold hover:text-secondary transition duration-300">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
+                    <img src="https://i.postimg.cc/pdjwtMxJ/face.jpg" alt="Face Detection" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Face Detection</h3>
+                        <p class="text-gray-600 mb-4">Face Detection is a computer vision project that identifies and locates human faces in images or videos. It uses machine learning techniques to enhance security, authentication, and automation systems.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">Deep Learning</span>
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">Tenser flow</span>
+                           <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">Open CV</span>
+                        </div>
+                        <a href="https://github.com/UnnatiAmbatkar/face-detection-" class="text-primary font-semibold hover:text-secondary transition duration-300">View Project →</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md project-card">
+                    <img src="https://i.postimg.cc/nL1X2550/game.jpg" alt="game" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Tic Tac Toe Game</h3>
+                        <p class="text-gray-600 mb-4">Tic Tac Toe is a classic two-player strategy game played on a 3×3 grid where players take turns marking X or O.The goal is to align three of your symbols horizontally, vertically, or diagonally to win.</p>
+</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded">Python</span>
+                        </div>
+                        <a href="https://github.com/UnnatiAmbatkar/tic-tac-toe-game" class="text-primary font-semibold hover:text-secondary transition duration-300">View Project →</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://github.com/UnnatiAmbatkar" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-secondary transition duration-300">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-primary mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Email</h4>
+                                <p class="text-gray-600">unnatiambatkar2021@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+91 9307339476</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-github text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">GitHub</h4>
+                                <p class="text-gray-600">github.com/UnnatiAmbatkar</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-linkedin-in text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">LinkedIn</h4>
+                                <p class="text-gray-600">linkedin.com/in/unnati-ambatkar-268b2026b</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-800 mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/UnnatiAmbatkar" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/unnati-ambatkar-268b2026b" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-secondary transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-4">Unnati Ambatkar</h2>
+                <p class="text-gray-400 mb-6">MERN Stack Developer & Android App Developer</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-gray-500">&copy; 2025 Unnati Ambatkar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.fa-bars');
+        const navLinks = document.querySelector('.hidden.md\\:flex');
+
+        mobileMenuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
